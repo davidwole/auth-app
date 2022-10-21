@@ -25,3 +25,5 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.send('Hi');
 });
+
+app.use('/api/workouts', require('./workoutRoutes'));
